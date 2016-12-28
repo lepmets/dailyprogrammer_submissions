@@ -13,10 +13,10 @@ for day in dayOfChristmas:
     print('')
     print('On the ' + day +
           ' day of christmas' + '\nmy true love sent to me:')
-    numOfGifts = dayOfChristmas.index(day)+1
-    for gift in gifts[(len(gifts)-1)-dayOfChristmas.index(day):len(gifts)]:
+    numOfGifts = dayOfChristmas.index(day) + 1
+    for gift in gifts[(len(gifts) - 1) - dayOfChristmas.index(day):len(gifts)]:
         if numOfGifts == 1:
-            print('And ' + str(numOfGifts) + ' ' + gifts[len(gifts)-1])
+            print('And ' + str(numOfGifts) + ' ' + gifts[len(gifts) - 1])
         else:
             print(str(numOfGifts) + ' ' + gift)
         numOfGifts -= 1
